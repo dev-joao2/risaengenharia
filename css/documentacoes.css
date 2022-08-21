@@ -14,6 +14,9 @@
   --dark-color: hsl(0deg 0% 0%);
   --menu-indicator-color: hsl(199deg 71% 73%);
   --sub-title-color: hsl(183deg 98% 48%);
+  --gmail-color: hsl(6deg 69% 54%);
+  --whatsapp-color: hsl(113deg 65% 41%);
+  --instagram-color: hsl(349deg 75% 57%);
   --ball-primary-color: hsl(191deg 67% 59%);
   --ball-primary-shadow-color: hsl(191deg 67% 59% / 27%);
   --ball-secondary-color: hsl(339deg 100% 59%);
@@ -467,7 +470,7 @@ body {
   }
 
   nav#navigation .menu ul li.sub-menu::before {
-    right: -18px;
+    right: -1.8rem;
     cursor: pointer;
   }
 
@@ -549,15 +552,15 @@ body {
   }
 
   #menu-icons .navigation ul li:nth-child(1) a:hover::before {
-    background: #DB4A39;
+    background: var(--gmail-color);
   }
 
   #menu-icons .navigation ul li:nth-child(2) a:hover::before {
-    background: #34AF23;
+    background: var(--whatsapp-color);
   }
 
   #menu-icons .navigation ul li:nth-child(3) a:hover::before {
-    background: #E4405f;
+    background: var(--instagram-color);
   }
 
   /*=== HOME =================================*/
@@ -591,8 +594,8 @@ body {
   }
 
   .card-header img {
-    width: 208px;
-    height: 318px;
+    width: 20.8rem;
+    height: 31.8rem;
     border-radius: 1.0rem;
     box-shadow: 0 0 0 0.8rem rgba(211, 211, 211, 0.8);
     margin: 2.0rem 0;
@@ -611,5 +614,18 @@ body {
 
   .bubbles span {
     margin: 0 4rem;
+  }
+}
+
+@media (orientation: landscape) {
+  body.menu-expanded .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 78.0rem;
+    height: 100vh;
+    position: absolute;
+    left: -13.4rem;
   }
 }

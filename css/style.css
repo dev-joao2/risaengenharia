@@ -14,6 +14,9 @@
   --dark-color: hsl(0deg 0% 0%);
   --menu-indicator-color: hsl(199deg 71% 73%);
   --sub-title-color: hsl(183deg 98% 48%);
+  --gmail-color: hsl(6deg 69% 54%);
+  --whatsapp-color: hsl(113deg 65% 41%);
+  --instagram-color: hsl(349deg 75% 57%);
   --ball-primary-color: hsl(191deg 67% 59%);
   --ball-primary-shadow-color: hsl(191deg 67% 59% / 27%);
   --ball-secondary-color: hsl(339deg 100% 59%);
@@ -466,7 +469,7 @@ nav#navigation .menu ul li ul li {
   }
 
   nav#navigation .menu ul li.sub-menu::before {
-    right: -18px;
+    right: -1.8rem;
     cursor: pointer;
   }
 
@@ -548,15 +551,15 @@ nav#navigation .menu ul li ul li {
   }
 
   #menu-icons .navigation ul li:nth-child(1) a:hover::before {
-    background: #DB4A39;
+    background: var(--gmail-color);
   }
 
   #menu-icons .navigation ul li:nth-child(2) a:hover::before {
-    background: #34AF23;
+    background: var(--whatsapp-color);
   }
 
   #menu-icons .navigation ul li:nth-child(3) a:hover::before {
-    background: #E4405f;
+    background: var(--instagram-color);
   }
 
   /*=== HOME =================================*/
@@ -590,9 +593,9 @@ nav#navigation .menu ul li ul li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 780px;
+    width: 78.0rem;
     height: 100vh;
     position: absolute;
-    left: -134px;
+    left: -13.4rem;
   }
 }
