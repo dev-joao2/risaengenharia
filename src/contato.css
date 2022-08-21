@@ -268,8 +268,8 @@ nav#navigation .menu ul li ul li {
 
 .contact {
   position: relative;
-  min-width: 1100px;
-  min-height: 550px;
+  min-width: 110.0rem;
+  min-height: 55.0rem;
   display: flex;
   z-index: 1000;
 }
@@ -280,38 +280,38 @@ nav#navigation .menu ul li ul li {
 
 .contact .contactInfo {
   position: absolute;
-  top: 40px;
-  width: 350px;
-  height: calc(100% - 80px);
+  top: 4.0re;
+  width: 35.0rem;
+  height: calc(100% - 8.0rem);
   background: transparent;
   z-index: 1;
-  padding: 40px;
+  padding: 4.0rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2.0rem 2.5rem rgba(0, 0, 0, 0.15);
 }
 
 .contact .contactForm {
   position: absolute;
-  padding: 70px 50px;
-  padding-left: 250px;
-  margin-left: 150px;
-  width: calc(100% - 150px);
+  padding: 7.0rem 5.0rem;
+  padding-left: 25.0rem;
+  margin-left: 15.0rem;
+  width: calc(100% - 15.0rem);
   height: 100%;
   background: transparent;
-  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5.0rem 5.0rem rgba(0, 0, 0, 0.25);
 }
 
 .contact .contactForm h2 {
-  color: #fff;
+  color: var(--white-color);
   font-weight: bold;
 }
 
 .contact .contactInfo {
-  color: #fff;
-  font-size: 12px;
+  color: var(--white-color);
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -320,12 +320,12 @@ nav#navigation .menu ul li ul li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 30px;
+  padding-top: 3.0rem;
 }
 
 .contact .contactForm .formBox .inputBox {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 3.5rem;
 }
 
 .contact .contactForm .formBox .inputBox.w50 {
@@ -340,27 +340,27 @@ nav#navigation .menu ul li ul li {
 .contact .contactForm .formBox .inputBox textarea {
   width: 100%;
   resize: none;
-  padding: 5px 0;
-  font-size: 18px;
-  font-weight: 300;
-  color: #333;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--white-color);
   border: none;
   outline: none;
   background: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 0.1rem solid var(--white-color);
 }
 
 .contact .contactForm .formBox .inputBox textarea {
-  height: 120px;
+  height: 12.0rem;
 }
 
 .contact .contactForm .formBox .inputBox label {
   position: absolute;
   left: 0;
-  padding: 5px 0;
+  padding: 0.5rem 0;
   pointer-events: none;
-  font-size: 18px;
-  color: #fff;
+  font-size: 1.8rem;
+  color: var(--white-color);
   font-weight: 300;
   transition: 0.3s;
 }
@@ -369,28 +369,43 @@ nav#navigation .menu ul li ul li {
 .contact .contactForm .formBox .inputBox input:valid ~ label,
 .contact .contactForm .formBox .inputBox textarea:focus ~ label,
 .contact .contactForm .formBox .inputBox textarea:valid ~ label {
-  transform: translateY(-20px);
-  font-size: 12px;
+  transform: translateY(-2.0rem);
+  font-size: 1.2rem;
   font-weight: 400;
-  letter-spacing: 1px;
-  color: #095A55;
+  letter-spacing: 0.1rem;
+  color: var(--primary-color);
   font-weight: 500;
 }
 
-.contact .contactForm .formBox .inputBox input[type="submit"],
-.contact .contactForm .formBox .inputBox input[type="button"] {
+.contact .contactForm .formBox .inputBox input[type="submit"] {
   position: relative;
   cursor: pointer;
-  background: #095A55;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--white-color);
   border: none;
-  max-width: 150px;
-  padding: 8px;
+  max-width: 15.0rem;
+  width: 15.0rem;
+  padding: 0.8rem;
 }
 
-.contact .contactForm .formBox .inputBox input[type="submit"]:hover,
-.contact .contactForm .formBox .inputBox input[type="button"]:hover {
-  background: #0D948B;
+.contact .contactForm .formBox .inputBox input[type="submit"]:hover {
+  background: rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.btn-enviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-enviar i {
+  color: var(--white-color);
+  position: absolute;
+  right: 0;
+  margin-bottom: 0.4rem;
+  margin-right: 0.8rem;
 }
 
 
@@ -542,7 +557,7 @@ body {
   }
 
   nav#navigation .menu ul li.sub-menu::before {
-    right: -18px;
+    right: -1.8rem;
     cursor: pointer;
   }
 
@@ -649,8 +664,12 @@ body {
 
   .contact .contactForm .formBox .inputBox input[type="submit"],
   .contact .contactForm .formBox .inputBox input[type="button"] {
-    padding: 12px;
+    padding: 1.2rem;
 }
+
+  .btn-enviar i {
+    margin-bottom: 0.2rem;
+  }
  
 
   /*=== BACKGROUND =================================*/
@@ -664,13 +683,13 @@ body {
   .contact {
     width: 90%;
     min-width: auto;
-    margin: 20px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    margin: 2.0rem;
+    box-shadow: 0 2.0rem 5.0rem rgba(0, 0, 0, 0.2);
 }
 
 .contact .contactInfo {
     top: 0;
-    height: 550px;
+    height: 55.0rem;
     position: relative;
     box-shadow: none;
 }
@@ -681,7 +700,7 @@ body {
     padding-left: 0;
     margin-left: 0;
     padding: 2.5rem;
-    height: 550px;
+    height: 55.0rem;
     box-shadow: none
   }
 }
@@ -708,11 +727,11 @@ body {
 
 @media (max-width: 600px) {
   .contact .contactForm {
-      padding: 25px;
+      padding: 2.5rem;
   }
 
   .contact .contactInfo {
-      padding: 25px;
+      padding: 2.5rem;
       flex-direction: column;
   }
 

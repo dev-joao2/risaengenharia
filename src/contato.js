@@ -14,8 +14,8 @@ const mascaraTelefone = (valor) => {
 
 
  
-// * Volta a Tela Inicial
+// // * Volta a Tela Inicial
 
-function retornar() {
-    window.location = "../index.html"
-}
+// function retornar() {
+//     window.location = "../index.html"
+// }

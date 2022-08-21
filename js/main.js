@@ -16,17 +16,6 @@ for (let i = 0; i < menuLength; i++) {
   }
 }
 
-
-// $(document).ready(function() {
-//   $('.menu-toggle').click(function(){
-//     $('nav').toggleClass('active')
-//   })
-//   $('ul li.').click(function(){
-//     $(this).siblings().removeClass('active');
-//     $(this).toggleClass('active');
-//   })
-// })
-
 const navigation = document.querySelector('.navigation');
 document.querySelector('.sub-menu').onclick = function() {
   this.classList.toggle('active');

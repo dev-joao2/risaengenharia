@@ -255,6 +255,7 @@ nav#navigation .menu ul li ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #home img {
@@ -580,5 +581,18 @@ nav#navigation .menu ul li ul li {
 
   .bubbles span {
     margin: 0 4rem;
+  }
+}
+
+@media (orientation: landscape) {
+  body.menu-expanded .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 780px;
+    height: 100vh;
+    position: absolute;
+    left: -134px;
   }
 }
