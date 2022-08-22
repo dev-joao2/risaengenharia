@@ -12,11 +12,24 @@
 
   --white-color: hsl(0deg 0% 100%);
   --dark-color: hsl(0deg 0% 0%);
+
+
   --menu-indicator-color: hsl(199deg 71% 73%);
   --sub-title-color: hsl(183deg 98% 48%);
+
+
   --gmail-color: hsl(6deg 69% 54%);
   --whatsapp-color: hsl(113deg 65% 41%);
   --instagram-color: hsl(349deg 75% 57%);
+
+
+  --card-title-blue-color: hsl(202deg 100% 41%);
+  --card-title-red-color: hsl(6deg 72% 55%);
+  --border-grey-color: hsl(0deg 0% 87%);
+  --span-blue-color: hsl(215deg 100% 55%);
+  --span-red-color: hsl(339deg 100% 59%);
+
+
   --ball-primary-color: hsl(191deg 67% 59%);
   --ball-primary-shadow-color: hsl(191deg 67% 59% / 27%);
   --ball-secondary-color: hsl(339deg 100% 59%);
@@ -628,15 +641,29 @@ body {
   }
 }
 
-@media (orientation: landscape) {
+@media  (orientation: landscape) {
   body.menu-expanded .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 78.0rem;
+    width: 100vw;
     height: 100vh;
     position: absolute;
-    left: -13.4rem;
+    left: -23.4rem;
+    padding-top: 20.0rem;
+  }
+}
+
+@media (min-width: 500px) {
+  body.menu-expanded .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 120.0rem;
+    height: 100vh;
+    position: absolute;
+    left: -35.0rem;
   }
 }
