@@ -600,17 +600,10 @@ nav#navigation .menu ul li ul li {
   }
 }
 
-@media  (orientation: landscape) {
+@media (orientation: landscape) {
   body.menu-expanded .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 120.0rem;
-    position: absolute;
-    left: -23.4rem;
-    padding-top: 30.0rem;
+    overflow: auto;
+    padding-top: 20.0rem;
   }
 }
 
@@ -621,9 +614,9 @@ nav#navigation .menu ul li ul li {
     justify-content: center;
     flex-direction: column;
     width: 120.0rem;
-    height: 120.0rem;
+    height: 100vh;
     position: absolute;
     left: -35.0rem;
-    top: -25.0rem;
+    overflow: auto;
   }
 }
