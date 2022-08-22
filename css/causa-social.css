@@ -633,10 +633,10 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 120.0rem;
     position: absolute;
     left: -23.4rem;
-    padding-top: 20.0rem;
+    padding-top: 30.0rem;
   }
 }
 
@@ -647,8 +647,9 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 120.0rem;
-    height: 100vh;
+    height: 120.0rem;
     position: absolute;
     left: -35.0rem;
+    top: -25.0rem;
   }
 }
