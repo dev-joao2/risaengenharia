@@ -600,7 +600,7 @@ nav#navigation .menu ul li ul li {
   }
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   body.menu-expanded .menu {
     padding-top: 20.0rem;
     height: 103vh;
@@ -620,4 +620,4 @@ nav#navigation .menu ul li ul li {
     left: -35.0rem;
     overflow: auto;
   }
-}
+} */
