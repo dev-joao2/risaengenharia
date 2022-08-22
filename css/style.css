@@ -142,9 +142,9 @@ nav .close-menu {
 
 /*=== MENU-EXPANDED =================================*/
 
-/* body.menu-expanded {
-  overflow: hidden;
-} */
+body.menu-expanded {
+  overflow: auto;
+}
 
 body.menu-expanded > :not(nav) {
   visibility: hidden;
