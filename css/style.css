@@ -603,7 +603,7 @@ nav#navigation .menu ul li ul li {
 @media (orientation: landscape) {
   body.menu-expanded .menu {
     overflow: auto;
-    padding-top: 20.0rem;
+    padding-top: 10.0rem;
   }
 }
 
