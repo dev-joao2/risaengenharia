@@ -108,10 +108,16 @@
 
 /* fadeDown */
 
-.wrapper, .navigation {
+.menu, .open-menu, .navigation {
     -webkit-animation-delay: 3.8s;
     -moz-animation-delay: 3.8s;                                               /* Animação do Index e de todas as paginas */
     animation-delay: 3.8s;
+}
+
+.logo-inicio {
+    -webkit-animation-delay: 3.7s;
+    -moz-animation-delay: 3.7s;                                               /* Animação do Index e de todas as paginas */
+    animation-delay: 3.7s;
 }
 
 .menu-icons {
@@ -228,7 +234,7 @@
     animation-delay: 1s;
 }
 
-.contactInfo {
+.contact {
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;                                                       /* Animação do Contato */
     animation-delay: 2s;

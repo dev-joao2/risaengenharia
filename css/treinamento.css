@@ -860,31 +860,3 @@ body {
     width: 100%;
   }
 }
-
-@media  (orientation: landscape) {
-  body.menu-expanded .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 120.0rem;
-    position: absolute;
-    left: -23.4rem;
-    padding-top: 30.0rem;
-  }
-}
-
-@media (min-width: 500px) {
-  body.menu-expanded .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 120.0rem;
-    height: 120.0rem;
-    position: absolute;
-    left: -35.0rem;
-    top: -25.0rem;
-  }
-}
