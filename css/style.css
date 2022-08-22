@@ -603,7 +603,7 @@ nav#navigation .menu ul li ul li {
 @media (orientation: landscape) {
   body.menu-expanded .menu {
     padding-top: 20.0rem;
-    border: 1px solid red;
+    height: 103vh;
     margin-top: -10px;
   }
 }
