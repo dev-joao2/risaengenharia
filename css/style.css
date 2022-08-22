@@ -602,9 +602,9 @@ nav#navigation .menu ul li ul li {
 
 @media (orientation: landscape) {
   body.menu-expanded .menu {
-    overflow: visible;
     padding-top: 20.0rem;
-    height: 100%;
+    border: 1px solid red;
+    margin-top: -10px;
   }
 }
 
@@ -615,7 +615,7 @@ nav#navigation .menu ul li ul li {
     justify-content: center;
     flex-direction: column;
     width: 120.0rem;
-    height: 100vh;
+    height: 103vh;
     position: absolute;
     left: -35.0rem;
     overflow: auto;
