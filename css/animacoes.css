@@ -108,16 +108,16 @@
 
 /* fadeDown */
 
-.menu, .open-menu, .navigation {
+.nav-bar, .open-menu, .navigation {
     -webkit-animation-delay: 3.8s;
     -moz-animation-delay: 3.8s;                                               /* Animação do Index e de todas as paginas */
     animation-delay: 3.8s;
 }
 
 .logo-inicio {
-    -webkit-animation-delay: 3.7s;
-    -moz-animation-delay: 3.7s;                                               /* Animação do Index e de todas as paginas */
-    animation-delay: 3.7s;
+    -webkit-animation-delay: 3.6s;
+    -moz-animation-delay: 3.6s;                                               /* Animação do Index e de todas as paginas */
+    animation-delay: 3.6s;
 }
 
 .menu-icons {
