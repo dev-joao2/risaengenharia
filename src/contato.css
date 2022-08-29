@@ -26,6 +26,8 @@
   --card-title-blue-color: hsl(202deg 100% 41%);
   --card-title-red-color: hsl(6deg 72% 55%);
   --border-grey-color: hsl(0deg 0% 87%);
+  --border-white-color: hsl(0deg 0% 100% / 15%);
+  --border-white-hover-color: hsl(0deg 0% 100% / 50%);
   --span-blue-color: hsl(215deg 100% 55%);
   --span-red-color: hsl(339deg 100% 59%);
 
@@ -272,15 +274,14 @@ nav#navigation .menu ul li ul li {
   overflow: auto;
   margin-top: 5.8rem;
   align-items: center;
+  position: fixed;
   scroll-behavior: smooth;
-  overflow: overlay;
 }
 
 .wrapper-content {
   display: flex;
   padding: 0 2.0rem;
 }
-
 
 .contact {
   position: relative;
@@ -290,13 +291,18 @@ nav#navigation .menu ul li ul li {
   z-index: 1000;
 }
 
+.contactInfo, .contactForm {
+  border: 1px solid var(--border-white-color);
+  border-radius: 1.0rem;
+}
+
 .img-contato {
   max-width: 100%;
 }
 
 .contact .contactInfo {
   position: absolute;
-  top: 4.0re;
+  top: 4.0rem;
   width: 35.0rem;
   height: calc(100% - 8.0rem);
   background: transparent;
@@ -393,6 +399,11 @@ nav#navigation .menu ul li ul li {
   font-weight: 500;
 }
 
+.contact .contactForm .formBox .inputBox input:focus ,
+.contact .contactForm .formBox .inputBox textarea:focus {
+  border-bottom: 1px solid var(--menu-indicator-color);
+}
+
 .contact .contactForm .formBox .inputBox input[type="submit"] {
   position: relative;
   cursor: pointer;
@@ -402,6 +413,7 @@ nav#navigation .menu ul li ul li {
   max-width: 15.0rem;
   width: 15.0rem;
   padding: 0.8rem;
+  text-align: center;
 }
 
 .contact .contactForm .formBox .inputBox input[type="submit"]:hover {
@@ -421,7 +433,7 @@ nav#navigation .menu ul li ul li {
   position: absolute;
   right: 0;
   margin-bottom: 0.4rem;
-  margin-right: 0.8rem;
+  margin-right: 1.2rem;
 }
 
 
@@ -678,13 +690,27 @@ body {
     justify-content: center;
   }
 
-  .contact .contactForm .formBox .inputBox input[type="submit"],
-  .contact .contactForm .formBox .inputBox input[type="button"] {
+  .contact {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5.0rem;
+  }
+
+  .contactInfo:hover,
+  .contactForm:hover {
+    transform: translateY(-2.0rem);
+    border-color: var(--border-white-hover-color);
+    transition: all 0.5s ease;
+  }
+
+  .contact .contactForm .formBox .inputBox input[type="submit"] {
     padding: 1.2rem;
-}
+  }
 
   .btn-enviar i {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
   }
  
 
