@@ -330,10 +330,14 @@
   .description-content {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 7.2rem;
     align-items: left;
     text-align: left;
     margin-top: 2.0rem;
+  }
+
+  .description-content span {
+    letter-spacing: 0.1rem;
   }
   
   body {

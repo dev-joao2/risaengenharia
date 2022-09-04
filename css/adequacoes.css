@@ -336,6 +336,10 @@ nav#navigation .menu ul li ul li {
   margin-top: 2.0rem;
 }
 
+.description-content span {
+  letter-spacing: 0.2rem;
+}
+
 body {
   overflow: hidden;
 }

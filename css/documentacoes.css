@@ -320,11 +320,16 @@ nav#navigation .menu ul li ul li {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  top: 2.0rem;
+  top: 5.0rem;
   padding: 0.5rem 2.0rem 2.0rem 2.0rem;
   background: transparent;
   text-align: left;
   align-items: left;
+}
+
+.description-titulo {
+  position: relative;
+  top: -1.0rem;
 }
 
 .description-content {
@@ -333,7 +338,7 @@ nav#navigation .menu ul li ul li {
   gap: 1.25rem;
   align-items: left;
   text-align: left;
-  margin-top: 2.0rem;
+  margin-top: 0;
 }
 
 .description-content span {

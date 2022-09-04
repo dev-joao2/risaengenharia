@@ -336,11 +336,12 @@ nav#navigation .menu ul li ul li {
 }
 
 .description-texto {
-  margin-top: 5.8rem;
+  margin-top: 5.0rem;
 }
 
 .description-footer {
-  margin-top: 2.0rem;
+  margin-top: 4.7rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
