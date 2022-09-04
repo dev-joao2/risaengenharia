@@ -330,7 +330,7 @@
   .description-content {
     display: flex;
     flex-direction: column;
-    gap: 7.2rem;
+    gap: 3.2rem;
     align-items: left;
     text-align: left;
     margin-top: 2.0rem;
@@ -634,7 +634,7 @@
     }
   
     .description {
-      top: 2.5rem;
+      top: 3.5rem;
     }
   
     .description-content {
