@@ -320,7 +320,7 @@ nav#navigation .menu ul li ul li {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  top: 5.0rem;
+  top: 2.5rem;
   padding: 0.5rem 2.0rem 2.0rem 2.0rem;
   background: transparent;
   text-align: left;
@@ -639,7 +639,7 @@ body {
   }
 
   .description {
-    top: 2.5rem;
+    top: 5.0rem;
   }
 
   /*=== BACKGROUND =================================*/
