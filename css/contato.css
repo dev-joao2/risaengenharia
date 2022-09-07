@@ -437,6 +437,11 @@ nav#navigation .menu ul li ul li {
   margin-right: 1.2rem;
 }
 
+.btn-enviar span{
+  margin: 20px 0 0;
+  text-align: center;
+}
+
 
 body {
   overflow: hidden;
