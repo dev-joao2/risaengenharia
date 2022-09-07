@@ -437,10 +437,11 @@
     }
   
     nav#navigation .menu {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: 9.0rem;
     }
   
     nav#navigation .menu ul:nth-child(1) {
