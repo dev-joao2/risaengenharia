@@ -847,6 +847,12 @@ body {
   }
 }
 
+@media (min-width: 1100px) {
+  nav#navigation .menu {
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   #home {
     display: flex;
