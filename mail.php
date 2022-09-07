@@ -13,7 +13,7 @@ $subject = "Contato - teste";
 $body = "Nome: " .$nome. "\n".
         "Email: " .$email. "\n".
         "mensagem: " .$mensagem;
-$header = "From: teste@example.com.br"."\r\n".
+$header = "From: contato@risaengenharia.com.br"."\r\n".
             "Reply-to:".$email."\e\n".
             "X=Mailer:PHP/".phpversion();
 
