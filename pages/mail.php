@@ -1,31 +1,18 @@
-<?php 
+<?php
 
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 
-if(isset($_POST['email']) && !empty($_POST['email'])) {
+$mailheader = "From:".$name."<".$email.">\r\n";
 
-$nome = addslashes($_POST['name']);
-$email = addslashes($_POST['email']);
-$mensagem = addslashes($_POST['mensagem']);
+$recipient = "contato@risaengenharia.com.br";
 
+mail($recipient, $subject, $message, $mailheader)
+or die("Error!");
 
-$to = "contato@risaengenharia.com.br";
-$subject = "Contato - teste";
-$body = "Nome: " .$nome. "\n".
-        "Email: " .$email. "\n".
-        "mensagem: " .$mensagem;
-$header = "From: contato@risaengenharia.com.br"."\r\n".
-            "Reply-to:".$email."\e\n".
-            "X=Mailer:PHP/".phpversion();
-
-if(mail($to,$subject,$body,$header)) {
-
-    echo("Email enviado com sucesso!");
-
-}else {
-    echo("O Email não pode ser enviado!");
-}
-
-
-}
+echo"message send!";
 
 ?>
