@@ -31,6 +31,9 @@
   --span-blue-color: hsl(215deg 100% 55%);
   --span-red-color: hsl(339deg 100% 59%);
 
+  --text-primary-color: hsl(0deg 0% 20%);
+  --text-secondary-color: hsl(0deg 0% 49%);
+
 
   --ball-primary-color: hsl(191deg 67% 59%);
   --ball-primary-shadow-color: hsl(191deg 67% 59% / 27%);
@@ -292,7 +295,7 @@ nav#navigation .menu ul li ul li {
 }
 
 .contactInfo, .contactForm {
-  border: 1px solid var(--border-white-color);
+  border: 0.1rem solid var(--border-white-color);
   border-radius: 1.0rem;
 }
 
@@ -401,7 +404,7 @@ nav#navigation .menu ul li ul li {
 
 .contact .contactForm .formBox .inputBox input:focus,
 .contact .contactForm .formBox .inputBox textarea:focus {
-  border-bottom: 1px solid var(--menu-indicator-color);
+  border-bottom: 0.1rem solid var(--menu-indicator-color);
 }
 
 .contact .contactForm .formBox .inputBox input[type="submit"] {
@@ -437,6 +440,110 @@ nav#navigation .menu ul li ul li {
   margin-right: 1.2rem;
 }
 
+.toast{
+  position: absolute;
+  top: 2.5rem;
+  right: 0.5rem;
+  border-radius: 1.2rem;
+  background: var(--white-color);
+  padding: 2.0rem 3.5rem 2.0rem 2.5rem;
+  box-shadow: 0 0.5rem 1.0rem rgba(0,0,0,0.1);
+  border-left: 0.6rem solid var(--primary-color);
+  overflow: hidden;
+  transform: translateX(calc(100% + 3.0rem));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active{
+  transform: translateX(0%);
+}
+
+.toast .toast-content{
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 2.0rem;
+  border-radius: 50%;
+}
+
+.toast-content .message{
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.0rem;
+}
+
+.message .text{
+  font-size: 2.0rem;
+  font-weight: 400;;
+  color: var(--text-secondary-color);
+}
+
+.message .text.text-1{
+  font-weight: 600;
+  color: var(--text-primary-color);
+}
+
+.toast .close{
+  position: absolute;
+  top: 1.0rem;
+  right: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close:hover{
+  opacity: 1;
+}
+
+.toast .progress{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.3rem;
+  width: 100%;
+  background: var(--border-grey-color);
+}
+
+.toast .progress:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--menu-indicator-color);
+}
+
+.progress.active:before{
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100%{
+      right: 100%;
+  }
+}
+
+#container {
+  position: fixed;
+  margin-top: 5.8rem;
+  overflow: hidden;
+  height: 20vh;
+  inset: 0;
+  z-index: 10000;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
 
 body {
   overflow: hidden;

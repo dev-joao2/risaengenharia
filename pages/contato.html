@@ -98,7 +98,7 @@
               </div>
               <div class="contactForm fadeRight animate">
                   <h2>Envie-nos uma mensagem</h2>
-                  <form class="form" action="mail.php" method="post">
+                  <form id="form">
                       <div class="formBox">
                           <div class="inputBox w50">
                               <input type="text" id="nome" name="name" required>
@@ -128,7 +128,7 @@
                               <label for="mensagem">Mensagem</label>
                           </div>
                           <div class="inputBox btn-enviar">
-                              <input type="submit" value="Enviar"><i class="fa-solid fa-paper-plane"></i>
+                              <input id="button" type="submit" disabled="disabled" value="Enviar"><i class="fa-solid fa-paper-plane"></i>
                           </div>
                       </div>
                   </form>
@@ -136,6 +136,25 @@
           </div>
         </div>
       </div>
+
+
+      <div id="container">
+        <div class="toast">
+            <div class="toast-content">
+                <i class="fas fa-solid fa-check check"></i>
+
+                <div class="message">
+                    <span class="text text-1">Sucesso!</span>
+                    <span class="text text-2">Email Enviado.</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close"></i>
+
+            <div class="progress"></div>
+        </div>
+
+    </div>
+
     </section>
 
     <section class="background fadeUp animate">
